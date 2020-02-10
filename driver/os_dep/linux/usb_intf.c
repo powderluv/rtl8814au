@@ -188,7 +188,12 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 #ifdef CONFIG_RTL8814A
 	{USB_DEVICE(USB_VENDER_ID_REALTEK, 0x8813), .driver_info = RTL8814A},
 	/*=== Customer ID ===*/	
-	{USB_DEVICE(0x2001, 0x331a), .driver_info = RTL8814A}, /* D-Link - D-Link */	
+	{USB_DEVICE(0x2001, 0x331a), .driver_info = RTL8814A}, /* D-Link - D-Link */
+	{USB_DEVICE(0x2357, 0x0106), .driver_info = RTL8814A}, /* TP-Link Archer T9UH v1 */
+	{USB_DEVICE(0x0846, 0x9054), .driver_info = RTL8814A}, /* NetGear, Inc. A7000 */
+	{USB_DEVICE(0x7392, 0xa833), .driver_info = RTL8814A}, /* Edimax AC1750 */
+	{USB_DEVICE(0x0b05, 0x1852), .driver_info = RTL8814A}, /* ASUSTek Computer, Inc. 802.11ac */
+	{USB_DEVICE(0x0846, 0x9054), .driver_info = RTL8814A}, /* NetGear, Inc. A7000 */
 #endif /* CONFIG_RTL8814A */
 
 #ifdef CONFIG_RTL8188F
